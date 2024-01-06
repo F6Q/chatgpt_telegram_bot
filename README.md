@@ -10,15 +10,8 @@ Code Organization:
     
 Example:
 
-php
-<code>
-$openaiApiKey = 'your_openai_api_key';
+<code>$openaiApiKey = 'your_openai_api_key';
 $telegramBotToken = 'your_telegram_bot_token';
+</code>
 
-$bot = new ChatGPT($telegramBotToken, $openaiApiKey);
 
-// Handle incoming updates and engage in intelligent conversations
-$update = json_decode(file_get_contents("php://input"), true);
-$bot->handleUpdate($update);
-```
-Feel free to enhance, modify, or contribute to this project. Happy coding!
